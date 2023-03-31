@@ -32,6 +32,9 @@ Register a new account if you have not got one.
 python chatgpt_nlui_demo.py
 ```
 
+![image](https://user-images.githubusercontent.com/8808539/229014866-94b0ac1a-7406-41ad-adea-3e8d5eb13c19.png)
+
+
 ### Licences
 
 Copyright (C) 2023 - Andrew Kwok-Fai Lui
