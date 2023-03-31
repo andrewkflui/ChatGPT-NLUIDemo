@@ -1,5 +1,18 @@
+#
+# Copyright (C) 2023 - Andrew Kwok-Fai Lui
+
+# This program is free software; you can redistribute it and/or modify it under the terms 
+# of the GNU General Public License version 2 as published by the Free Software Foundation.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+# without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+# See the GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License along with this 
+# program; if not, see http://www.gnu.org/licenses/.
+
 import openai
-####################
+
 # Setup the OpenAI API for ChatGPT
 
 with open('OPENAI_KEY','r') as f:
@@ -7,7 +20,7 @@ with open('OPENAI_KEY','r') as f:
 
 openai.api_key = OPENAI_KEY
 
-with open('CHATGPT_SYS_PROMPT_2','r') as f:
+with open('CHATGPT_SYS_PROMPT_3','r') as f:
     content = f.read()
     SYSTEM_PROMPT = {'role': 'system', 'content': content}
 
@@ -39,15 +52,16 @@ def update_dropdown(tkvar, value):
     return True
 
 def update_checkbox(tkcomp, value):
-    if 'unchecked' in value:
+    if 'unchecked' in value or 'false' in value:
         tkcomp.deselect()
-    elif 'checked' in value:
+    elif 'checked' in value or 'true' in value:
         tkcomp.select()
     else:
         return False
     return True
 
 def update_gui(reply):
+    error_label.config(text='')
     lines = reply.splitlines() 
     for line in lines:
         line = line.strip()

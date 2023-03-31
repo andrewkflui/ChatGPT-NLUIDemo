@@ -1,5 +1,17 @@
 I want the start year to be 2006.
+
 Let's see the result from 2010 to 2015.
+
 Let's see the result from 2010 to 2015, and include only multi-vehicle and single-vehicle.
+
+Let's see the result from 2010 to 2015, and exclude multi-vehicle and single-vehicle.
+
+Let's see the result from 1995 to 2015, and include only multi-vehicle and single-vehicle.
+
 I wanna see only pedestrian.
+
 Please give me years starting from 2015 to now.
+
+Let's see the result from 1995 to 2015, and include multi-vehicle and single-vehicle. I also wanna see pedestrian.
+
+Let's see the result from 1995 to 2015, and include multi-vehicle and single-vehicle. I also wanna see pedestrian and exclude other types.
