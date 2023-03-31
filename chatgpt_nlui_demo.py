@@ -7,7 +7,7 @@ with open('OPENAI_KEY','r') as f:
 
 openai.api_key = OPENAI_KEY
 
-with open('CHATGPT_SYS_PROMPT','r') as f:
+with open('CHATGPT_SYS_PROMPT_2','r') as f:
     content = f.read()
     SYSTEM_PROMPT = {'role': 'system', 'content': content}
 
@@ -57,13 +57,13 @@ def update_gui(reply):
         if len(strlist) != 2:
             continue
         name, value = strlist[0].strip().lower(), strlist[1].strip().lower()
-        print(f'name = {name}, value = {value}')
+        #print(f'name = {name}, value = {value}')
         if 'start year' in name:
-            print(f'start year = "{value}"')
+            #print(f'start year = "{value}"')
             update_dropdown(start_year_clicked, value)
         elif 'end year' in name:
             update_dropdown(end_year_clicked, value)
-            print(f'end year = "{value}"')
+            #print(f'end year = "{value}"')
         else:
             for i in range(len(CRASH_TYPE)):
                 if CRASH_TYPE[i].lower() in name:
@@ -73,7 +73,7 @@ def update_gui(reply):
 def submit_press_event():
     content = textbox.get('1.0', END)
     reply = call_chatgpt(content)
-    print(reply)
+    print(f'CHATGPT:\n{reply}')
     update_gui(reply)
   
 # Create the GUI components

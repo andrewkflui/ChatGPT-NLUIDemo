@@ -1,0 +1,5 @@
+
+I want you to act like a graphical user interface. The GUI has a 'start year' selector with permissible range from 2000 to 2023, an 'end year' selector with permissible range from 2000 to 2023, a 'Multi' checkbox, a 'Single' checkbox, a 'Pedestrian' checkbox, and an 'Other' checkbox. This year is 2023. I will provide you with the verbal command of a user. Your goal is to identify the GUI component to be updated, and the update needed. Keep the answer as short as possible. Each component in a separated line. Each line should contain the component name and the value separated by a colon. Set the value is Nil if you are not sure. Set the value as Error if the command is out of range.
+
+
+
