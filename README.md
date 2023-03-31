@@ -1,5 +1,3 @@
-# ChatGPT-NLUIDemo
-
 # A Demo Natural Language User Interface based on a Prompt-Engineered ChatGPT model
  
 This repository contains the demo program described in the following Medium article
