@@ -2,7 +2,7 @@
  
 This repository contains the demo program described in the following Medium article
 
-* [Prompt Engineering in ChatGPT: building a Natural Language User Interface made easy](https://medium.com/@andrewlui_60044/prompt-engineering-in-chatgpt-building-a-natural-language-user-interface-made-easy-819b80cc98a3)
+* [Prompt Engineering in ChatGPT: Prompt Engineering in ChatGPT: adding natural language user input to a GUI easily](https://medium.com/@andrewlui_60044/prompt-engineering-in-chatgpt-building-a-natural-language-user-interface-made-easy-819b80cc98a3)
 
 ### Requirments
 Tested with these versions but older versions may work.
